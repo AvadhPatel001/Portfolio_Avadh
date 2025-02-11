@@ -189,7 +189,7 @@ body{
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    top: 0;
+    top: 20px;
 }
 .filter-menu h2{
     text-align: center;
