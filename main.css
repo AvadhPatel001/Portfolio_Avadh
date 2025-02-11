@@ -187,9 +187,9 @@ body{
 .filter-menu{
     width: 85%;
     position: relative;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%);
-    top: 3vw;
+    top: 20px;
 }
 .filter-menu h2{
     text-align: center;
@@ -203,6 +203,9 @@ body{
     flex-wrap: wrap;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 .ul li{
     list-style: none;
@@ -584,7 +587,9 @@ footer hr{
 
     .ul{
         display: block;
-        justify-content: center;
+        position: relative;
+        left: 48%;
+        transform: translate(-50%);
         text-align: center;
     }
     #project_items a button{
