@@ -193,9 +193,6 @@ body{
     transform: translate(-50%);
     top: 30px;
 }
-.filter-menu a{
-    text-decoration: none;
-}
 .filter-menu h2{
     text-align: center;
     font-size: 30px ;
@@ -239,6 +236,9 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+.items a{
+    text-decoration: none;
 }
 .project_items{
     width: 300px;
