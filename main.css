@@ -112,7 +112,9 @@ body{
 .text a button:hover{
     background-color: #a0a0a056;
 }
-
+#icons a img:hover{
+    cursor: pointer;
+}
 
 
 
@@ -190,6 +192,9 @@ body{
     left: 48%;
     transform: translate(-50%);
     top: 30px;
+}
+.filter-menu a{
+    text-decoration: none;
 }
 .filter-menu h2{
     text-align: center;
@@ -437,7 +442,7 @@ footer hr{
 
 
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
     .menu {
         display: none;                             
         flex-direction: column;
@@ -449,7 +454,6 @@ footer hr{
         background-color: #959595;
         padding: 2vw;
         padding-top: 19vw;
-        z-index: 999;
     }
 
     #logo img{
@@ -459,7 +463,6 @@ footer hr{
         display: block;
         padding: 1vw;
         text-align: center;
-        z-index: 999;
         color: white;
     }
     .menu a:hover{
@@ -483,11 +486,8 @@ footer hr{
         display: list-item;
         list-style: none;
         justify-content: center;
-        align-items: center;
         width: 80%;
-        z-index: 1;
         margin-top: -20px;
-        z-index: -1;
     }
     .text{
         text-align: center;
@@ -516,7 +516,6 @@ footer hr{
         width: 30px;
         height: fit-content;
         padding: 0 2vw;
-        cursor: pointer !important;
     }
     .text a button{
         width: fit-content;
@@ -524,13 +523,8 @@ footer hr{
         font-size: 2vw;
         padding: 1vw 2vw;
         margin-top: 4vw;
-        border-radius: 2vw;
-        cursor: pointer !important;
     }
-    .text a button:hover{
-        background-color: #cfcfcf91 !important;
-    }
-
+    
     .Image{
         width: 100%;
         display: flex;

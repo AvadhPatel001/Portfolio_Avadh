@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" style="z-index: 2;">
         <a href="/" id="logo"><img src="Images/logo.png" alt="Avadh Rangani"></a>
         <input type="checkbox" id="menu-checkbox" hidden>
         <label for="menu-checkbox" class="menu-toggle">
@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <div id="home">
+    <div id="home" style="z-index: 1;">
         <div class="text">
             <label id="text1">Hii I am</label><br><br>
             <label id="text2">Avadh Rangani</label><br><br>
@@ -36,7 +36,7 @@
                 <a href="https://github.com/AvadhPatel001" target="_blank"><img src="Icons/github.png" alt="Github"></a>
             </div>
 
-            <a href="Documents/Resume_Avadh.pdf" target="_blank"><button type="submit">Download Resume</button></a>
+            <a href="Documents/Resume_Avadh.pdf" target="_blank" class="resumeBtn"><button>Download Resume</button></a>
         </div>
         <div class="Image">
             <img src="Images/img1.png" alt="IMG OF CHARACTER">
@@ -101,21 +101,27 @@
         </ul>
 
         <div class="items">
-            <div class="project_items" data-filter="Website Design">
-                <img src="Images/Kalrav_Interior.png" alt="Kalrav Interior" >
-                <div class="project_text">
-                    <font>Kalrav Interior</font>
-                    <font>Website Design</font>
+            <a href="Documents/Kalrav Interior Final.png" target="_blank">
+                <div class="project_items" data-filter="Website Design">
+                    <img src="Images/Kalrav_Interior.png" alt="Kalrav Interior" >
+                    <div class="project_text">
+                        <font>Kalrav Interior</font>
+                        <font>Website Design</font>
+                    </div>
                 </div>
-            </div>
+            </a>
+            
 
-            <div class="project_items" data-filter="Mobile App Design">
-                <img src="Images/RTE.png" alt="RTE" >
-                <div class="project_text">
-                    <font>RTE Assist</font>
-                    <font>Mobile App Design</font>
+            <a href="Documents/RTE.png" target="_blank">
+                <div class="project_items" data-filter="Mobile App Design">
+                    <img src="Images/RTE.png" alt="RTE" >
+                    <div class="project_text">
+                        <font>RTE Assist</font>
+                        <font>Mobile App Design</font>
+                    </div>
                 </div>
-            </div>
+            </a>
+
 
             <div class="project_items" id="project_items" data-filter="Website">
                 <img src="Images/Kalrav_Interior.png" alt="Kalrav Interior"  style="width: 300px; border-radius: 18px;">
@@ -132,7 +138,7 @@
                     <font>internet Speedometer</font>
                     <font>Application</font>
                 </div>
-                <a href="" target="_blank"><button>Download</button></a>
+                <a href="Documents/Internet Speedometer.apk"><button>Download</button></a>
             </div>
 
             <div class="project_items" id="project_items" data-filter="Application">
@@ -141,7 +147,7 @@
                     <font>All In One Converter</font>
                     <font>Application</font>
                 </div>
-                <a href="" target="_blank"><button>Download</button></a>
+                <a href="Documents/All In One Converter.apk"><button>Download</button></a>
             </div>
         </div>
     </section>
@@ -171,7 +177,7 @@
         <ul>
             <li><a href="#logo">Home</a></li>
             <li><a href="#About_Me">About Me</a></li>
-            <li><a href="">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#footer_id">Contact</a></li>
         </ul>
         <div class="footer_icons">
