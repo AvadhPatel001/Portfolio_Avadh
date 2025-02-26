@@ -4,6 +4,9 @@ body{
     margin: 0;
     padding: 0;
 }
+*{
+    transition: 0.2s ease;
+}
 
 .navbar {
     display: flex;
@@ -16,8 +19,11 @@ body{
     left: 50%;
     transform: translate(-50%);
 }
-#logo img{
-    width: 170px;
+#logo{
+    font-size: 6rem;
+    color: white;
+    margin-left: -20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .navbar a {
     color: #959595;
@@ -26,6 +32,7 @@ body{
 }
 .navbar a:hover{
     color: #FD6F00;
+    scale: 1.2;
 }
 .menu {
     display: flex;
@@ -111,9 +118,11 @@ body{
 }
 .text a button:hover{
     background-color: #a0a0a056;
+    scale: 1.05;
 }
 #icons a img:hover{
     cursor: pointer;
+    scale: 1.1;
 }
 
 
@@ -225,6 +234,7 @@ body{
 .ul li:hover{
     background-color: #FD6F00;
     color: white;
+    scale: 1.05;
 }
 .ul li.current{
     background-color: #FD6F00;
@@ -247,6 +257,10 @@ body{
     border: 2px solid #595858;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
+    &:hover{
+        scale: 1.03;
+    }
 }
 .project_items img{
     width: 300px;
@@ -289,6 +303,7 @@ body{
     opacity: 0.7;
     background-color: #FD6F00;
     color: white;
+    scale: 1.1;
 }
 .project_items img:hover{
     opacity: 0.7;
@@ -367,19 +382,18 @@ body{
 
 footer{
     width: 100%;
-    /* height: 33vw; */
     background-color: #ffffff10;
     margin-top: 110px;
     position: relative;
     bottom: -2vw;
     left: 0;
+    text-align: center;
 }
 .footer_logo{
-    width: 15vw;
-    position: relative;
-    top: 2vw;
-    left: 50%;
-    transform: translate(-50%);
+    text-decoration: none;
+    font-size: 6rem;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 footer ul{
     list-style: none;
@@ -387,7 +401,7 @@ footer ul{
     width: 40%;
     justify-content: space-between;
     position: relative;
-    top: 2vw;
+    top: 0;
     left: 50%;
     transform: translate(-50%);
     margin-left: -2vw;
@@ -398,17 +412,20 @@ footer ul li a{
     font-size: 1.7vw;
 }
 footer ul li a:hover{
-    color: #CA5900;
+    color: #FD6F00;
 }
 .footer_icons{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 4vw;
 }
 .footer_icons a img{
     width: 4vw;
     padding: 0 2vw;
+
+    &:hover{
+        scale: 1.1;
+    }
 }
 .footer_contacts{
     width: 100%;
@@ -456,8 +473,8 @@ footer hr{
         padding-top: 19vw;
     }
 
-    #logo img{
-        width: 20vw;
+    #logo{
+        font-size: 3rem;
     }
     .menu a {
         display: block;
@@ -592,5 +609,11 @@ footer hr{
         font-size: 14px;
         position: relative;
         top: -210px;
+    }
+
+
+
+    .footer_logo{
+        font-size: 3rem;
     }
 }
