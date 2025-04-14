@@ -455,13 +455,12 @@ footer {
 footer ul {
     list-style: none;
     display: flex;
-    width: 40%;
+    width: 50%;
     justify-content: space-between;
     position: relative;
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    margin-left: -2vw;
 }
 
 footer ul li a {
